@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <title>Ticket de compra</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="ticket">
+      <div id="verde" style="display: none;">
+        <div class="caja" id="verde">
+          <div class="sangriaCaja" id="verde">
+          </div>
+          <div class="texto">
+            <h1>OK!</h1>
+            <p>Se agregó el artículo al ticket correctamente</p>
+          </div>
+          <div class="cajaBoton">
+            <button id="verde" onclick="cerrarCaja('verde')">X</button>
+          </div>
+        </div>
+        <br>
+      </div>
+      <br>
+      <div class="escaner">
+        <div>
+          <div class="escanerTexto">
+            <p>Artículo</p>
+          </div>
+          <input class="escanerCuadro" type="text" id="articulo">
+        </div>
+        <br>
+      </div>
+      <div class="escaner">
+        <div>
+          <div class="escanerTexto">
+            <p>Precio</p>
+          </div>
+          <input class="escanerCuadro" type="text" id="precio">
+        </div>
+        <br>
+      </div>
+      <br>
+      <div class="total">
+        <button onclick="agregarArticulo()"><h2>Agregar Artículo</h2></button>
+      </div>
+      <br>
+      <div class="total">
+        <button id="total" onclick="calcularTotal()"><h2>Calcular Total</h2></button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="resumen" id="ticket">
+        <p>========TU TICKET========</p>
+      </div>
+      <div class="resumen" id="total-ticket">
+        <p><br></p>
+        <p>_____________________________________</p>
+        <p>TOTAL: $<span id="total-precio"></span></p>
+      </div>      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
