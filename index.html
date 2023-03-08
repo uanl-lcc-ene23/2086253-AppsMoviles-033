@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <title>Ticket de compra</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <div class="ticket">
+      <div class="escaner">
+        <div>
+          <div class="escanerTexto">
+            <ion-label>Artículo</ion-label>
+          </div>
+          <ion-input class="escanerCuadro" type="text" id="articulo"></ion-input>
+        </div>
+      </div>
+      <br>
+      <div class="escaner">
+        <div>
+          <div class="escanerTexto">
+            <ion-label>Precio</ion-label>
+          </div>
+          <ion-input class="escanerCuadro" type="text" id="precio"></ion-input>
+        </div>
+        <br>
+      </div>
+      <br>
+      <br>
+      <div class="total">
+        <ion-button onclick="agregarArticulo()"><h2>Agregar Artículo</h2></ion-button>
+      </div>
+      <br>
+      <br>
+      <ion-list class="resumen" id="ticket">
+        <ion-label>========TU TICKET========</ion-label>
+      </ion-list>
+      <ion-list class="resumen" id="total-ticket">
+        <ion-label>___________________________________</ion-label>
+        <ion-label>TOTAL: $<span id="total-precio"></span></ion-label>    
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
