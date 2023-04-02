@@ -15,13 +15,17 @@ body {
   
   .caja{
     width: 80%;
-    position: relative;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     margin: 0 auto;
     background-color: #cff7d3;   
     border: 1px solid #009951;
     border-radius: 15px;
     font-family: 'Inter', sans-serif;
+    z-index: 9999;
   }
     
   .sangriaCaja{
@@ -94,9 +98,6 @@ body {
   .resumen#ticket{
     text-align: center;
   }
-  .resumen#totalticket{
-    text-align: left;
-  }
   
   h1{
     font-size: 20px;
@@ -117,4 +118,8 @@ body {
   
   .bg-grey {
     background-color: rgb(225, 225, 225);
+  }
+
+  .texto{
+    padding-left: 5px;
   }
