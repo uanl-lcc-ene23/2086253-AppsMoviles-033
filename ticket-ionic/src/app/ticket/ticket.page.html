@@ -1,9 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>ticket</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+<div class="ticket">
+  <br>
+  <br>
+  <div class="escaner">
+    <div>
+      <div class="escanerTexto">
+        <ion-label>Artículo</ion-label>
+      </div>
+      <ion-input class="escanerCuadro" type="text" id="articulo"></ion-input>
+    </div>
+  </div>
+  <br>
+  <div class="escaner">
+    <div>
+      <div class="escanerTexto">
+        <ion-label>Precio</ion-label>
+      </div>
+      <ion-input class="escanerCuadro" type="text" id="precio"></ion-input>
+    </div>
+    <br>
+  </div>
+  <br>
+  <br>
+  <div>
+    <ion-button class="total" onclick="agregarArticulo()"><h2>Agregar Artículo</h2></ion-button>
+  </div>
+  <br>
+  <br>
+  <ion-list class="resumen" id="ticket">
+    <ion-label>========TU TICKET========</ion-label>
+  </ion-list>
+  <ion-list class="resumen" id="total-ticket">
+    <ion-label>____________________________</ion-label>
+    <ion-label>TOTAL: $<span id="total-precio"></span></ion-label>
+  </ion-list>    
+</div>

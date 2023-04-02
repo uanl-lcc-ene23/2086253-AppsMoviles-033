@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ticket',
   templateUrl: './ticket.page.html',
-  styleUrls: ['./ticket.page.scss'],
+  styleUrls: ['./ticket.page.css'],
 })
 export class TicketPage implements OnInit {
 
