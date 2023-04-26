@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "miapp-2086253": {
+      "hosting": {
+        "app": [
+          "miapp-2086253"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "miapp-2086253"
+  }
+}
