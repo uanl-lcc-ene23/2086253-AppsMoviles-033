@@ -9,10 +9,12 @@ import { Router } from '@angular/router';
 })
 export class FloatMenuComponent  implements OnInit {
   datosMenu: Menu[] =[
-    {nombre: 'Grid',enlace:'/home',
-    icono:'grid-outline'},
-    {nombre: 'Ticket',enlace:'/ticket',
-    icono:'cash-outline'},
+    {nombre: 'Home',enlace:'/home',
+    icono:'home-outline'},
+    {nombre: 'Start',enlace:'/start',
+    icono:'checkmark-outline'},
+    {nombre: 'Singup',enlace:'/singup',
+    icono:'book-outline'},
   ];
 
   constructor(private router: Router) { }

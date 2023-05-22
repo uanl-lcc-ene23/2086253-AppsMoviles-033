@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TicketPageRoutingModule } from './ticket-routing.module';
+import { SingupPageRoutingModule } from './singup-routing.module';
 
-import { TicketPage } from './ticket.page';
+import { SingupPage } from './singup.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TicketPageRoutingModule
+    SingupPageRoutingModule
   ],
-  declarations: [TicketPage]
+  declarations: [SingupPage]
 })
-export class TicketPageModule {}
+export class SingupPageModule {}
