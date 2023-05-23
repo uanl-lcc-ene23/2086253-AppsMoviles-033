@@ -17,8 +17,6 @@ export class FloatMenuComponent  implements OnInit {
     icono:'book-outline'},
     {nombre: 'Login',enlace:'/login',
     icono:'log-in-outline'},
-    {nombre: 'Choose-artist',enlace:'/choose-artist',
-    icono:'person-outline'},
     {nombre: 'Search',enlace:'/search',
     icono:'search-outline'},
     {nombre: 'Album',enlace:'/album',

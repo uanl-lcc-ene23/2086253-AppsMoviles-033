@@ -19,10 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
   {
-    path: 'choose-artist',
-    loadChildren: () => import('./choose-artist/choose-artist.module').then(m => m.ChooseArtistPageModule)
-  },
-  {
     path: 'search',
     loadChildren: () => import('./search/search.module').then(m => m.SearchPageModule)
   },

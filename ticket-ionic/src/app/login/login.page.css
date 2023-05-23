@@ -12,14 +12,14 @@ h1 {
 
 p {
     position: relative;
-    width: 190px;
+    width: 240px;
     height: 27px;
     margin: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+    text-align: start;
     color: #FFFFFF;
 }
 
