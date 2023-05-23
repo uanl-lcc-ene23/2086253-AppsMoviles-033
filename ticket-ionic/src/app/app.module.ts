@@ -7,14 +7,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FloatMenuComponent } from './componentes/float-menu/float-menu.component';
+import { FormsModule } from '@angular/forms';
 
-//firebase
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+// Firebase
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-
-//importar firebaseconfig
-import {environment} from '../environments/environment.prod';
-import { provideAuth,getAuth } from '@angular/fire/auth'
+import { environment } from '../environments/environment.prod';
+import { provideAuth, getAuth } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [AppComponent, FloatMenuComponent],
@@ -22,6 +21,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth'
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),
@@ -30,3 +30,4 @@ import { provideAuth,getAuth } from '@angular/fire/auth'
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
